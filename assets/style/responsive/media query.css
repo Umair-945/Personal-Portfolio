@@ -1,0 +1,169 @@
+
+@media (max-width: 1024px){
+    .text { width: 50%; }
+    .image, .second_image { width: 350px; height: 350px; }
+    .progress_first, .progress_Second { margin-left: 30px; }
+    .html progress { width: 400px !important; }
+
+
+ 
+    #home, .about {
+        padding: 20px;
+        gap: 30px;
+    }
+    .text, .about_text { width: 55%; }
+    .image, .second_image { width: 350px; height: 350px; }
+ 
+    .progress_values {
+        flex-direction: column !important;
+        padding: 20px;
+    }
+    .progress_first, .progress_Second {
+        width: 90% !important;
+        margin: 0 auto 30px auto !important;
+    }
+    .html progress { 
+        width: 100% !important;   
+        max-width: 500px;
+    }
+    
+   
+    .service_card-1, .service_card-2 {
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+    .service-card { 
+        width: 45% !important; 
+        margin-bottom: 20px;
+    }
+
+}
+
+    
+
+ 
+@media (max-width: 768px){
+    
+    header .menu { display: none !important; }
+    header { justify-content: space-between; align-items: center; }
+    #ham_burger { display: block !important; }
+    .logo { width: auto; }
+    .logo h1 { margin-left: 10px; font-size: 24px; }
+
+     
+    #home {
+        flex-direction: column-reverse !important;
+        text-align: center;
+        padding: 20px;
+    }
+    .text { width: 100%; }
+    .text > p { margin-left: 0; }
+    h2, h3, h4 { margin-left: 0; }
+    .buttons { justify-content: center; margin-left: 0; }
+    .image { width: 280px; height: 280px; margin: 20px auto; }
+
+    
+    .about {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .about_text { width: 100%; }
+    .about_text > p { margin-left: 0; }
+    .second_image { width: 280px; height: 280px; margin: 20px auto; }
+ 
+    #skills .progress_values {
+        flex-direction: column !important;
+        padding: 20px;
+    }
+    .progress_first, .progress_Second {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    .html {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+    .html progress { width: 100% !important; }
+
+     
+    .service_card-1, .service_card-2 {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 15px;
+    }
+    .service-card { width: 90% !important; }
+ 
+    #contact .container {
+        padding: 0 20px;
+    }
+    .form { width: 90% !important; margin: 0 auto 25px auto !important; }
+    .form-control { width: 100% !important; }
+    .form-button { width: 100% !important; }
+
+    
+    .footer_menu { flex-direction: column !important; text-align: center; }
+    .footer-logo, .list { width: 100% !important; }
+    .footer_p { margin-left: 0; font-size: 24px; }
+    h1 { margin-left: 0; }
+
+    hr { width: 15% !important; }
+    .skills, .services, .contact_in { width: 10% !important; }
+    .contact_hr { width: 40% !important; }
+
+ 
+    .footer_menu {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 20px 10px !important;
+    }
+    .footer-logo, .list {
+        width: 100% !important;
+    }
+    
+    .footer_list {
+        display: block !important;
+        padding: 0 15px !important;  
+    }
+    
+    .footer_list li {
+        margin-bottom: 12px;
+    }
+    
+    .footer_list li a {
+        display: inline-block !important;
+        white-space: nowrap !important;  
+        font-size: 15px;
+        word-break: keep-all;  
+    }
+ 
+    .Rights {
+        width: 100% !important;
+        margin: 20px 0 !important;
+    }
+    
+    hr {
+        width: 20% !important;
+    }
+    .footer_p {
+        font-size: 22px !important;
+        margin-left: 0 !important;
+    }
+}
+
+
+ 
+@media (max-width: 480px){
+    .image, .second_image { width: 220px; height: 220px; }
+    .buttons { flex-direction: column; align-items: center; }
+    .projects > button, .contact_me > button { width: 200px; }
+    .service-card { width: 95% !important; }
+    .form { width: 95% !important; }
+}
+
+@media (max-width: 400px){
+    .footer_list li a {
+        white-space: normal !important;  
+        font-size: 14px;
+    }
+}
