@@ -470,6 +470,36 @@ aside>ul>li>a:hover{
 
 
 }
+.whatsapp-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #00ff9f;
+      background-image: url("/assets/icon/whatsapp_svgrepo_com.svg");
+}
+
 
 .side_head>h1{
     position: absolute;
@@ -479,6 +509,36 @@ aside>ul>li>a:hover{
     font-size: 45px;
 
 }
+
+.github{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.github:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+
+}
+
+.github>a>img{
+    margin-bottom: 5px;
+    width: 90%;
+    border-radius: 50%;
+    background: transparent;
+}
+
 
 
 .html progress {
