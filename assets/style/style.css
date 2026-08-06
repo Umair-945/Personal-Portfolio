@@ -510,6 +510,14 @@ aside>ul>li>a:hover{
 
 }
 
+aside>p{
+    text-transform: uppercase;
+    position: absolute;
+    left: 15px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .github{
     margin-top: 20px;
     border-radius: 50%;
@@ -525,6 +533,35 @@ aside>ul>li>a:hover{
     
 
 }
+.sidebar_contacts{
+    display: flex;
+}
+.github_sidebar{
+     margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.github_sidebar>a>img{
+    margin-bottom: 5px;
+    width: 90%;
+    border-radius: 50%;
+    background: transparent;
+}
+.github_sidebar:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+}
+
 
 .github:hover{
     transition: 0.3s;
