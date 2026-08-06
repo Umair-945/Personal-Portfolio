@@ -436,6 +436,7 @@ aside {
     height: 100vh;
     position: absolute;
     top: 0px;
+    left: 0px;
 }
 
 aside>ul {
