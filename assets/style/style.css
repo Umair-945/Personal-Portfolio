@@ -537,6 +537,61 @@ aside>p{
 .sidebar_contacts{
     display: flex;
 }
+.linkdin_sidebar{
+     margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.linkdin_sidebar>a>img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 3.3px;
+    justify-content: center;
+    background: transparent;    
+}
+.linkdin_sidebar:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+}
+.whatsapp_sidebar{
+     margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.whatsapp_sidebar>a>img{
+    width: 90%;
+    /* border-radius: 50%; */
+    margin-left: 1px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp_sidebar:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+}
 .github_sidebar{
      margin-top: 20px;
     border-radius: 50%;
@@ -553,7 +608,7 @@ aside>p{
 }
 
 .github_sidebar>a>img{
-    margin-bottom: 5px;
+    margin-bottom: 3.5px;
     width: 90%;
     border-radius: 50%;
     background: transparent;
@@ -577,8 +632,67 @@ aside>p{
     background: transparent;
 }
 
+.linkdin{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    
+
+}
 
 
+.linkdin>a>img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 3.3px;
+    justify-content: center;
+    background: transparent;    
+}
+.linkdin:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+}
+
+.links_footer{
+    display: flex;
+    gap: 15px;
+}
+
+.whatsapp{
+   margin-top: 20px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color:gray;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp>a>img{
+    width: 90%;
+    margin-left: 1px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp:hover{
+    transition: 0.3s;
+    background-color: #00ff9f;
+}
 .html progress {
     width: 100% !important;
     max-width: 600px;
