@@ -18,9 +18,13 @@ menu.addEventListener("click" , function() {
 
 
 });
-
-close_btn.addEventListener("click" , function(){
-
-side.style.width = "0";
-
-})
+document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', function () {
+        side.style.width = "0";
+    });
+});
+document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('#sidebar').classList.remove('active');
+    });
+});
