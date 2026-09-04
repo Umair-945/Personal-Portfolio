@@ -698,6 +698,12 @@ aside>p{
     max-width: 600px;
 }
 
+.form-note {
+    text-align: center;
+    color:#00ff9f;
+    min-height: 24px;
+}
+
 
 .footer_list a {
     overflow-wrap: anywhere; 
