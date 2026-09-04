@@ -30,13 +30,16 @@ document.querySelectorAll('#sidebar a').forEach(link => {
     });
 });
 
-const contactForm = document.querySelector(".form");
+const contactForm = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
 
 if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
+
         formNote.textContent = "Thanks! Please message me on WhatsApp for a faster reply.";
+
+        // Form clear
         contactForm.reset();
     });
 }
