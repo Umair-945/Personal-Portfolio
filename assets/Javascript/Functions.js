@@ -39,7 +39,95 @@ if (contactForm) {
 
         formNote.textContent = "Thanks! Please message me on WhatsApp for a faster reply.";
 
-        // Form clear
         contactForm.reset();
+    });
+}
+
+
+/* ================= CONTACT FORM EMAIL ================= */
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const button = contactForm.querySelector("button");
+
+        button.disabled = true;
+        button.innerText = "Sending...";
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Check
+        console.log("Name:", name);
+        console.log("Email:", email);
+        console.log("Message:", message);
+
+        try {
+
+            const response = await fetch(
+                "https://formsubmit.co/ajax/umairarshad8653@gmail.com",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message,
+
+                        _subject: "New Message From Umair Arshad Portfolio",
+
+                        _replyto: email,
+
+                        _template: "table"
+                    })
+                }
+            );
+
+            const result = await response.json();
+
+            console.log("FormSubmit Response:", result);
+
+            if (response.ok) {
+
+                formNote.textContent =
+                    "Message Sent Successfully! ✅";
+
+                formNote.style.color = "#00ff9f";
+
+                contactForm.reset();
+
+            } else {
+
+                formNote.textContent =
+                    "Message Send Nahi Hua ❌";
+
+                formNote.style.color = "red";
+
+                console.error(result);
+            }
+
+        } catch (error) {
+
+            console.error("FORM ERROR:", error);
+
+            formNote.textContent =
+                "Something went wrong ❌";
+
+            formNote.style.color = "red";
+
+        } finally {
+
+            button.disabled = false;
+            button.innerText = "Send Message";
+        }
     });
 }
