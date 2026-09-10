@@ -46,6 +46,7 @@ if (contactForm) {
 
 /* ================= CONTACT FORM EMAIL ================= */
 
+
 if (contactForm) {
 
     contactForm.addEventListener("submit", async function (e) {
@@ -54,17 +55,23 @@ if (contactForm) {
 
         const button = contactForm.querySelector("button");
 
-        button.disabled = true;
-        button.innerText = "Sending...";
-
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        // Check
-        console.log("Name:", name);
-        console.log("Email:", email);
-        console.log("Message:", message);
+        // Check fields
+        if (name === "" || email === "" || message === "") {
+
+            formNote.textContent = "Please fill all fields ❌";
+            formNote.style.color = "red";
+
+            return;
+        }
+
+        button.disabled = true;
+        button.innerText = "Sending...";
+
+        formNote.textContent = "";
 
         try {
 
@@ -79,15 +86,18 @@ if (contactForm) {
                     },
 
                     body: JSON.stringify({
+
                         name: name,
                         email: email,
                         message: message,
 
-                        _subject: "New Message From Umair Arshad Portfolio",
+                        _subject:
+                            "New Message From Umair Arshad Portfolio",
 
                         _replyto: email,
 
                         _template: "table"
+
                     })
                 }
             );
@@ -113,11 +123,12 @@ if (contactForm) {
                 formNote.style.color = "red";
 
                 console.error(result);
+
             }
 
         } catch (error) {
 
-            console.error("FORM ERROR:", error);
+            console.error("Contact Form Error:", error);
 
             formNote.textContent =
                 "Something went wrong ❌";
@@ -128,6 +139,9 @@ if (contactForm) {
 
             button.disabled = false;
             button.innerText = "Send Message";
+
         }
+
     });
+
 }
